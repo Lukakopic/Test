@@ -1,0 +1,218 @@
+.content {
+  max-width: 800px;
+  margin: auto;
+  border-style: solid;
+  border-width: medium;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+
+  .sidenav .closebtn {
+    position: center;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 200px;
+  }
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+    .sidenav a {
+      font-size: 18px;
+    }
+}
+
+
+/*SIDE NAVIGATION START*/
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn:hover {
+    color: gray;
+  }
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: #5b1111;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: none;
+  padding-left: 50px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/*SIDE NAVIGATION ENDS*/
+
+
+/*TOP BUTTON START*/
+#myTopBtn {
+  display: normal; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: solid; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #5b1111; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+  #myTopBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+/*TOP BUTTON ENDS*/
+
+
+/*TOP NAVIGATION START*/
+/* Add a black background color to the top navigation bar */
+.topnav {
+  overflow: auto;
+  background-color: black;
+  margin-top: -5px;
+}
+
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+  background-color: #5b1111;
+  color: white;
+}
+/*TOP NAVIGATION ENDS*/
+
+
+/*SEARCH BAR START*/
+/* Style the search box inside the navigation bar */
+.topnav input[type=text], .topnav .search-container button {
+  float: right;
+  padding: 6px;
+  border: solid;
+  border-color: #5b1111;
+  border-width: thin;
+  margin-top: 13px;
+  font-size: 15px;
+}
+
+.topnav .search-container button {
+  padding: 13px 13px;
+  align-self: flex-end;
+  margin-top: 15px;
+  background: white;
+  border: solid;
+  border-width: thin;
+  border-color: #5b1111;
+  cursor: pointer;
+}
+  /* Optional: Style the caret down icon 
+.fa-search {
+  float: none;
+  padding-right: 8px;
+}*/
+  .topnav .search-container button:hover {
+    background: #5b1111;
+    /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+    @media screen and (max-width: 600px) {
+      .topnav a, .topnav input[type=text] {
+        float: left;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+      }
+
+      .topnav input[type=text] {
+        border: 1px solid #ccc;
+      }
+    }
+  }
+/*SEARCH BAR ENDS*/

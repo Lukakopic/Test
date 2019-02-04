@@ -1,0 +1,13 @@
+.content {
+  max-width: 800px;
+  margin: auto;
+  border-style: solid;
+  border-width: medium;
+}
+
+body {
+  font-family: "Lato", Baskerville old face;
+  transition: background-color .5s;
+  outline-color: rgb(40, 44, 52);
+  
+}
