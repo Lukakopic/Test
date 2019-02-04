@@ -1,3 +1,8 @@
+.responsive {
+  width: 100%;
+  height: auto;
+
+}
 .content {
   max-width: 800px;
   margin: auto;
@@ -172,47 +177,41 @@
 
 /*SEARCH BAR START*/
 /* Style the search box inside the navigation bar */
-.topnav input[type=text], .topnav .search-container button {
+input[type=text] {
+  width: 150px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
   float: right;
   padding: 6px;
-  border: solid;
-  border-color: #5b1111;
-  border-width: thin;
-  margin-top: 13px;
-  font-size: 15px;
+  margin-top: 17px;
+  background-image:url(/assets/Searchicon.png);
+  background-size:18px;
+  background-position:left;
+  background-repeat:no-repeat;
+  
 }
 
-.topnav .search-container button {
-  padding: 13px 13px;
-  align-self: flex-end;
-  margin-top: 15px;
-  background: white;
-  border: solid;
-  border-width: thin;
-  border-color: #5b1111;
-  cursor: pointer;
-}
-  /* Optional: Style the caret down icon 
-.fa-search {
-  float: none;
-  padding-right: 8px;
-}*/
-  .topnav .search-container button:hover {
-    background: #5b1111;
+  /* When the input field gets focus, change its width  */
+  input[type=text]:focus {
+    width: 250px;
+  }
+  
+
+
     /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
     @media screen and (max-width: 600px) {
       .topnav a, .topnav input[type=text] {
         float: left;
         display: block;
         text-align: left;
-        width: 100%;
+        width: 200px;
         margin: 0;
-        padding: 14px;
+        padding: 10px;
       }
 
       .topnav input[type=text] {
         border: 1px solid #ccc;
       }
     }
-  }
+  
 /*SEARCH BAR ENDS*/

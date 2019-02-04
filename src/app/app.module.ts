@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 /*import { HomeComponent } from './app.component';*/
 import { RouterModule } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
