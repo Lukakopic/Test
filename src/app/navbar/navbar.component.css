@@ -1,3 +1,4 @@
+
 .responsive {
   width: 100%;
   height: auto;
@@ -38,10 +39,10 @@
     margin-left: 200px;
   }
 
-#main {
+/*#main {
   transition: margin-left .5s;
   padding: 16px;
-}
+}*/
 
 @media screen and (max-height: 450px) {
   .sidenav {
@@ -84,7 +85,7 @@
 
 /* Add an active class to the active dropdown button */
 .active {
-  background-color: #5b1111;
+  background-color: #480606;
   color: white;
 }
 
@@ -113,7 +114,7 @@
   z-index: 99; /* Make sure it does not overlap */
   border: solid; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: #5b1111; /* Set a background color */
+  background-color: #480606; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 10px; /* Some padding */
@@ -131,7 +132,7 @@
 /* Add a black background color to the top navigation bar */
 .topnav {
   overflow: auto;
-  background-color: black;
+  background-color: #000000;
   margin-top: -5px;
   
 }
@@ -165,8 +166,22 @@
 
 /* Style the "active" element to highlight the current page */
 .topnav a.active {
-  background-color: #5b1111;
+  background-color: #480606;
   color: white;
+}
+
+@media screen and (max-height: 200px) {
+  .topnav {
+    padding-top: 15px;
+    float:none;
+    display:block;
+  }
+
+    .topnav a {
+      font-size: 18px;
+      float:none;
+      display:block;
+    }
 }
 /*TOP NAVIGATION ENDS*/
 
