@@ -3,12 +3,6 @@
   height: auto;
 
 }
-.content {
-  max-width: 800px;
-  margin: auto;
-  border-style: solid;
-  border-width: medium;
-}
 
 .sidenav {
   height: 100%;
@@ -139,6 +133,7 @@
   overflow: auto;
   background-color: black;
   margin-top: -5px;
+  
 }
 
   /* Style the links inside the navigation bar */
@@ -148,6 +143,7 @@
     color: white;
     text-align: center;
     padding: 14px 16px;
+    margin-top:10px;
     text-decoration: none;
     font-size: 20px;
     cursor: pointer;

@@ -1,38 +1,33 @@
-  <div class="content">
+  <a><img src="/assets/header.png" alt="Handball" width="800" height="350" class="responsive"></a>
 
-    <a><img src="/assets/header.png" alt="Handball" width="800" height="350" class="responsive"></a>
-      
 
-      <div class="topnav">
-        <a><span style="margin-top:8px; margin-bottom:0px; font-size:25px;cursor:pointer;" onclick="openNav()">&#9776; Menu</span></a>
-        <a style="margin-top:8px; margin-bottom:0px" RouterLink="/home">Home</a>
-        <a style="margin-top:8px; margin-bottom:0px" RouterLink="/about">About</a>
-        <a style="margin-top:8px; margin-bottom:0px" RouterLink="/contact">Contact</a>
-        <div class="search-container">
-          <form action="/action_page.php">
-            <input type="text" placeholder=" Search.." name="search" style="padding-left:20px;">
-          </form>
-        </div>
-      </div>
+  <div class="topnav">
+    <a><span onclick="openNav()">&#9776; Menu</span></a>
+    <a  routerLink="/home" routerLinkActive="active">Home</a>
+    <a  routerLink="/about" routerLinkActive="active">About</a>
+    <a  routerLink="/contact" routerLinkActive="active">Contact</a>
+    <div class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder=" Search.." name="search" style="padding-left:20px;">
+      </form>
+    </div>
+  </div>
 
-      <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a RouterLink="/players">Players</a>
-        <a RouterLink="/leagues">Leagues</a>
-        <button class="dropdown-btn">
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a routerLink="/players">Players</a>
+    <a routerLink="/leagues">Leagues</a>
+           <button class="dropdown-btn"> Choose League<i class="fa fa-caret-down"></i> </button>
+                 <div class="dropdown-container">
+                    <a routerLink="/croatian">Croatian league</a>
+                    <a routerLink="/german">German league</a>
+                    <a routerLink="/french">French league</a>
+                    <a routerLink="/spanish">Spanish league</a>
+                 </div>
 
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-container">
-          <a RouterLink="/croatian">Croatian league</a>
-          <a RouterLink="/german">German league</a>
-          <a RouterLink="/french">French league</a>
-          <a RouterLink="/spanish">Spanish league</a>
-        </div>
-
-        <a RouterLink="/history">History</a>
-        <a RouterLink="/bestofalltimes">Best of all times</a>
-      </div>
+    <a routerLink="/history">History</a>
+    <a routerLink="/bestofalltimes">Best of all times</a>
+  </div>
 
       <button onclick="topFunction()" id="myTopBtn" title="Go to top">Top</button>
 
