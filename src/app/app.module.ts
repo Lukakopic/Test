@@ -11,8 +11,8 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
-import { PlayersListComponent } from './players-list/players-list.component';
+
+
 
 
 
@@ -24,8 +24,9 @@ import { PlayersListComponent } from './players-list/players-list.component';
     SignUpComponent,
     AboutComponent,
     HomeComponent,
-    HttpClientModule,
-    PlayersListComponent
+   
+    
+    
   ],
   imports: [
     BrowserModule,
@@ -35,7 +36,7 @@ import { PlayersListComponent } from './players-list/players-list.component';
       { path: 'home', component: HomeComponent },
       { path: 'about', component: AboutComponent },
       { path: 'contact', component: ContactComponent },
-      { path: 'players',component: PlayersListComponent }
+      //{ path: 'players',component:  }
     ])
 
   ],

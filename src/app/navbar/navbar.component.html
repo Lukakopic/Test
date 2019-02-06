@@ -13,28 +13,27 @@
   </div>
 
   <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a routerLink="/players-list">Players</a>
-    <a routerLink="/leagues">Leagues</a>
-           <button class="dropdown-btn"> Choose League<i class="fa fa-caret-down"></i> </button>
-                 <div class="dropdown-container">
-                    <a routerLink="/croatian">Croatian league</a>
-                    <a routerLink="/german">German league</a>
-                    <a routerLink="/french">French league</a>
-                    <a routerLink="/spanish">Spanish league</a>
-                 </div>
 
-    <a routerLink="/history">History</a>
-    <a routerLink="/bestofthebest">Best of the Best</a>
+    <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+    <h2>Welcome to Menu</h2>
+        <a routerLink="/players">Players</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            League
+            <!--<i class="fa fa-caret-down"></i>-->
+          </button>
+          <div class="dropdown-container">
+            <a routerLink="/croatianleague">Croatian league</a>
+            <a routerLink="/germanleague">German league</a>
+            <a routerLink="/frenchleague">French league</a>
+            <a routerLink="/spanishleague">Spanish league</a>
+          </div>
+        </div>  
+        <a routerLink="/history">History</a>
+        <a routerLink="/bestofthebest">Best of the Best</a>
   </div>
 
 
 <button (click)="topFunction()" id="myTopBtn" title="Go to top">Top</button>
 
-      <!--<div id="main">
-  <div style="text-align:center;font:20px Calisto MT;font-weight:300;">
-    <h2>Introducing with handball</h2>
-  </div>
-  <p>
 
-  </p>-->

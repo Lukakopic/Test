@@ -1,10 +1,11 @@
-
+/*picture set*/
 .responsive {
   width: 100%;
   height: auto;
 
 }
 
+/*SIDE NAVIGATION START*/
 .sidenav {
   height: 100%;
   width: 0;
@@ -15,7 +16,9 @@
   background-color: #111;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
+  padding-top: 10px;
+  color:white;
+  text-align:center;
 }
 
   .sidenav a {
@@ -23,8 +26,9 @@
     text-decoration: none;
     font-size: 25px;
     color: #818181;
-    display: block;
-    transition: 0.3s;
+    display:block;
+    transition: 0,3s;
+    background-color: gray;
   }
 
     .sidenav a:hover {
@@ -39,10 +43,10 @@
     margin-left: 200px;
   }
 
-/*#main {
+#main {
   transition: margin-left .5s;
-  padding: 16px;
-}*/
+  padding: 60px;
+}
 
 @media screen and (max-height: 450px) {
   .sidenav {
@@ -53,15 +57,12 @@
       font-size: 18px;
     }
 }
-
-
-/*SIDE NAVIGATION START*/
 /* Style the sidenav links and the dropdown button */
-.sidenav a, .dropdown-btn {
-  padding: 6px 8px 6px 16px;
+.sidenav a {
+  padding: 10px 8px 6px 16px;
   text-decoration: none;
   font-size: 20px;
-  color: #818181;
+  color: white;
   display: block;
   border: none;
   background: none;
@@ -70,36 +71,60 @@
   cursor: pointer;
   outline: none;
 }
+/* Dropdown button */
+.dropdown .dropbtn {
+  display:block;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+/* Dropdown content (hidden by default) */
+.dropdown-container {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
 
   /* On mouse-over */
-  .sidenav a:hover, .dropdown-btn:hover {
-    color: gray;
-  }
+  .sidenav a:hover, .dropdown:hover .dropbtn {
+  color: gray;
+}
 
 /* Main content */
 .main {
   margin-left: 200px; /* Same as the width of the sidenav */
   font-size: 20px; /* Increased text to enable scrolling */
   padding: 0px 10px;
+  background-color: black;
 }
 
+  
 /* Add an active class to the active dropdown button */
 .active {
   background-color: #480606;
   color: white;
 }
 
-/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+ /*Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content 
 .dropdown-container {
   display: none;
   background-color: none;
   padding-left: 50px;
-}
+}*/
 
-/* Optional: Style the caret down icon */
+/*Optional: Style the caret down icon 
 .fa-caret-down {
-  float: right;
+  float: left;
   padding-right: 8px;
+  font-size: 5px;
 }
 
 /*SIDE NAVIGATION ENDS*/
