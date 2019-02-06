@@ -1,9 +1,23 @@
-/*picture set*/
+/*HEADER PICTURE set*/
 .responsive {
   width: 100%;
   height: auto;
+  }
 
+/* Container holding the image and the text */
+.picture-container {
+  position: relative;
+  text-align: center;
+  color: white;
 }
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 36px;
+}
+
 
 /*SIDE NAVIGATION START*/
 .sidenav {
@@ -127,7 +141,7 @@
   font-size: 5px;
 }
 
-/*SIDE NAVIGATION ENDS*/
+
 
 
 /*TOP BUTTON START*/
@@ -150,7 +164,7 @@
   #myTopBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
   }
-/*TOP BUTTON ENDS*/
+
 
 
 /*TOP NAVIGATION START*/
@@ -208,7 +222,7 @@
       display:block;
     }
 }
-/*TOP NAVIGATION ENDS*/
+
 
 
 /*SEARCH BAR START*/
@@ -220,6 +234,7 @@ input[type=text] {
   float: right;
   padding: 6px;
   margin-top: 17px;
+  margin-right:10px;
   background-image:url(/assets/Searchicon.png);
   background-size:18px;
   background-position:left;
@@ -250,4 +265,4 @@ input[type=text] {
       }
     }
   
-/*SEARCH BAR ENDS*/
+

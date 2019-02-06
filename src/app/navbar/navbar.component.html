@@ -1,39 +1,42 @@
-  <a><img src="/assets/header.png" alt="Handball" width="800" height="350" class="responsive"></a>
+<div class="picture-container">
+  <img src="/assets/header.jpg" alt="Handball" width="800" height="350" class="responsive">
+  <div class="top-right">REGISTER</div>
+</div>
 
   <div class="topnav">
     <a><span (click)="openNav()">&#9776; Menu</span></a>
-    <a  routerLink="/home" routerLinkActive="active">Home</a>
-    <a  routerLink="/about" routerLinkActive="active">About</a>
-    <a  routerLink="/contact" routerLinkActive="active">Contact</a>
-    <div class="search-container">
-      <form action="/action_page.php">
-        <input type="text" placeholder=" Search.." name="search" style="padding-left:20px;">
-      </form>
-    </div>
+    <a routerLink="/home" routerLinkActive="active">Home</a>
+    <a routerLink="/about" routerLinkActive="active">About</a>
+    <a routerLink="/contact" routerLinkActive="active">Contact</a>
+        <div class="search-container">
+           <form action="/action_page.php">
+              <input type="text" placeholder=" Search.." name="search" style="padding-left:20px;">
+           </form>
+        </div>
   </div>
 
   <div id="mySidenav" class="sidenav">
 
     <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
     <h2>Welcome to Menu</h2>
-        <a routerLink="/players">Players</a>
-        <div class="dropdown">
-          <button class="dropbtn">
-            League
-            <!--<i class="fa fa-caret-down"></i>-->
-          </button>
-          <div class="dropdown-container">
-            <a routerLink="/croatianleague">Croatian league</a>
-            <a routerLink="/germanleague">German league</a>
-            <a routerLink="/frenchleague">French league</a>
-            <a routerLink="/spanishleague">Spanish league</a>
-          </div>
-        </div>  
-        <a routerLink="/history">History</a>
-        <a routerLink="/bestofthebest">Best of the Best</a>
+    <a routerLink="/players">Players</a>
+    <div class="dropdown">
+      <button class="dropbtn">
+        League
+        <!--<i class="fa fa-caret-down"></i>-->
+      </button>
+      <div class="dropdown-container">
+        <a routerLink="/croatianleague">Croatian league</a>
+        <a routerLink="/germanleague">German league</a>
+        <a routerLink="/frenchleague">French league</a>
+        <a routerLink="/spanishleague">Spanish league</a>
+      </div>
+    </div>
+    <a routerLink="/history">History</a>
+    <a routerLink="/bestofthebest">Best of the Best</a>
   </div>
 
 
-<button (click)="topFunction()" id="myTopBtn" title="Go to top">Top</button>
+  <button (click)="topFunction()" id="myTopBtn" title="Go to top">Top</button>
 
 
