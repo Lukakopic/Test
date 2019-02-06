@@ -1,7 +1,7 @@
   <a><img src="/assets/header.png" alt="Handball" width="800" height="350" class="responsive"></a>
 
   <div class="topnav">
-    <a><span onclick="openNav()">&#9776; Menu</span></a>
+    <a><span (click)="openNav()">&#9776; Menu</span></a>
     <a  routerLink="/home" routerLinkActive="active">Home</a>
     <a  routerLink="/about" routerLinkActive="active">About</a>
     <a  routerLink="/contact" routerLinkActive="active">Contact</a>
@@ -14,7 +14,7 @@
 
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a routerLink="/players">Players</a>
+    <a routerLink="/players-list">Players</a>
     <a routerLink="/leagues">Leagues</a>
            <button class="dropdown-btn"> Choose League<i class="fa fa-caret-down"></i> </button>
                  <div class="dropdown-container">
@@ -29,7 +29,7 @@
   </div>
 
 
-<button onclick="topFunction()" id="myTopBtn" title="Go to top">Top</button>
+<button (click)="topFunction()" id="myTopBtn" title="Go to top">Top</button>
 
       <!--<div id="main">
   <div style="text-align:center;font:20px Calisto MT;font-weight:300;">
