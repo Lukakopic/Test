@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -21,19 +21,22 @@ export class NavbarComponent implements OnInit {
     document.getElementById("main").style.marginLeft = "0";
     document.body.style.backgroundColor = "white";
   };
-   /*IN PROCESS*/
-  
-  //window;onscroll = function () { scrollFunction() }; 
-  //scrollFunction = function () {
-  //  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-  //    document.getElementById("myTopBtn").style.display = "block";
-  //  } else {
-  //    document.getElementById("myTopBtn").style.display = "none";
-  //  }
-  //}
 
+
+  /*TOP BUTTON*/
+  
+  @HostListener("window:scroll", []) onWindowscroll() {
+   
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      document.getElementById("myTopBtn").style.display = "block";
+    } else {
+      document.getElementById("myTopBtn").style.display = "none";
+    }
+  }
+  
   topFunction = function() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
+  }
+
 }

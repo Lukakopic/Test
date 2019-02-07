@@ -64,8 +64,8 @@ footer {
     height: 120%;
     background: #3498db;
     transform: rotate(45deg);
-    left:-110%;
-    top:90%;
+    left: -110%;
+    top: 90%;
   }
   .btn:hover::before {
     animation: aaa 0.7s 1;
