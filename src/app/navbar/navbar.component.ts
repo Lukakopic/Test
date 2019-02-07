@@ -22,14 +22,15 @@ export class NavbarComponent implements OnInit {
     document.body.style.backgroundColor = "white";
   };
    /*IN PROCESS*/
-  window;onscroll = function () { scrollFunction() }; 
-  scrollFunction = function () {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      document.getElementById("myTopBtn").style.display = "block";
-    } else {
-      document.getElementById("myTopBtn").style.display = "none";
-    }
-  }
+  
+  //window;onscroll = function () { scrollFunction() }; 
+  //scrollFunction = function () {
+  //  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  //    document.getElementById("myTopBtn").style.display = "block";
+  //  } else {
+  //    document.getElementById("myTopBtn").style.display = "none";
+  //  }
+  //}
 
   topFunction = function() {
   document.body.scrollTop = 0; // For Safari
