@@ -1,0 +1,95 @@
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  
+}
+
+table.BlueTable {
+  position: page;
+  overflow:hidden;
+  margin-left:10%;
+  font-family: Tahoma, Geneva, sans-serif;
+  border: 2px solid #000000;
+  background-color: #F9F2E5;
+  width: 70%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+  table.BlueTable td, table.BlueTable th {
+    border: 1px solid #EFEFEF;
+    padding: 3px 2px;
+  }
+
+  table.BlueTable tbody td {
+    font-size: 13px;
+    color: #333333;
+  }
+    table.BlueTable tbody td:last-child {
+      border-right: 2px solid black;
+    }
+
+
+
+  table.BlueTable tr:nth-child(even) {
+    background: #AED4FF;
+  }
+
+  table.BlueTable thead {
+    background: #0F3A56;
+    background: -moz-linear-gradient(top, #4994fd 0%, #247ffd 66%, #0F3A56 100%);
+    background: -webkit-linear-gradient(top, #4994fd 0%, #247ffd 66%, #0F3A56 100%);
+    background: linear-gradient(to bottom, #2972d9 0%, #0b61d9 66%, #0F3A56 100%);
+    border-bottom: 3px solid #000000;
+  }
+
+    table.BlueTable thead th {
+      font-size: 17px;
+      font-weight: bold;
+      color: #FFFFFF;
+      text-align: center;
+      padding: 10px;
+      border-left: 1px solid #000000;
+    }
+
+      table.BlueTable thead th:first-child {
+        border-left: 2px solid black;
+       
+      }
+      table.BlueTable thead th:last-child {
+        border-right: 2px solid black;
+      }
+
+  table.BlueTable tfoot {
+    font-size: 13px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #0C71FD;
+    background: -moz-linear-gradient(top, #4994fd 0%, #247ffd 66%, #0C71FD 100%);
+    background: -webkit-linear-gradient(top, #4994fd 0%, #247ffd 66%, #0C71FD 100%);
+    background: linear-gradient(to bottom, #4994fd 0%, #247ffd 66%, #0C71FD 100%);
+  }
+
+    table.BlueTable tfoot td {
+      font-size: 13px;
+    }
+
+    table.BlueTable tfoot .links {
+      text-align: right;
+      padding:5px;
+    }
+
+      table.BlueTable tfoot .links a {
+        display: inline-block;
+        font-weight:bold;
+        background: #FFFFFF;
+        color: #A40808;
+        padding:2px 8px;
+        border-radius: 5px;
+      }
+      table.BlueTable tfoot .links a:hover {
+        font-size: medium;
+        background-color:#b9b9b9;
+        
+      }
