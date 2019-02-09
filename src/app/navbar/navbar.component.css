@@ -16,7 +16,7 @@
   position: absolute;
   top: 8px;
   right: 36px;
-}
+ }
 
 
 /*SIDE NAVIGATION START*/
@@ -33,6 +33,7 @@
   padding-top: 10px;
   color:white;
   text-align:center;
+  display:block;
 }
 
   .sidenav a {
@@ -97,6 +98,7 @@
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
 }
+
 /* Dropdown content (hidden by default) */
 .dropdown-container {
   display: none;

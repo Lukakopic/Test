@@ -17,8 +17,10 @@ export class PlayersComponent implements OnInit {
       .subscribe(data => this.players = data);
   }
   //IN PROGRESS
-  filterFunction = function() {
-  // Declare variables 
+
+  filterFunction = function () {
+
+   // Declare variables
   var input, filter, table, tr, td, i, txtValue;
   input = document.getElementById("myInput");
   filter = input.value.toUpperCase();

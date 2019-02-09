@@ -42,7 +42,8 @@ import { HttpClientModule } from '@angular/common/http';
       { path: 'home', component: HomeComponent },
       { path: 'about', component: AboutComponent },
       { path: 'contact', component: ContactComponent },
-      { path: 'players',component: PlayersComponent }
+      { path: 'players', component: PlayersComponent },
+      
     ])
 
   ],
