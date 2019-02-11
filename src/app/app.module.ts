@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { PlayersComponent } from './players/players.component';
 import { PlayersService } from './services/players.service';
 import { HttpClientModule } from '@angular/common/http';
+import { BestOfBestComponent } from './best-of-best/best-of-best.component';
 
 
 
@@ -28,6 +29,7 @@ import { HttpClientModule } from '@angular/common/http';
     AboutComponent,
     HomeComponent,
     PlayersComponent,
+    BestOfBestComponent,
     
    
    
@@ -43,6 +45,7 @@ import { HttpClientModule } from '@angular/common/http';
       { path: 'about', component: AboutComponent },
       { path: 'contact', component: ContactComponent },
       { path: 'players', component: PlayersComponent },
+      { path: 'bestofthebest', component: BestOfBestComponent },
       
     ])
 
