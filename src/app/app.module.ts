@@ -15,6 +15,7 @@ import { PlayersComponent } from './players/players.component';
 import { PlayersService } from './services/players.service';
 import { HttpClientModule } from '@angular/common/http';
 import { BestOfBestComponent } from './best-of-best/best-of-best.component';
+import { LogInComponent } from './log-in/log-in.component';
 
 
 
@@ -30,6 +31,7 @@ import { BestOfBestComponent } from './best-of-best/best-of-best.component';
     HomeComponent,
     PlayersComponent,
     BestOfBestComponent,
+    LogInComponent,
     
    
    

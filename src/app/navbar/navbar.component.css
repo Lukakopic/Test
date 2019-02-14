@@ -102,11 +102,14 @@
 /* Dropdown content (hidden by default) */
 .dropdown-container {
   display: none;
-  position: absolute;
-  background-color: #f9f9f9;
+  position: relative;
+  background-color: none;
+  color: white;
+  font-size:15px;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  padding-left: 50px;
 }
 
   /* On mouse-over */
@@ -129,12 +132,6 @@
   color: white;
 }
 
- /*Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content 
-.dropdown-container {
-  display: none;
-  background-color: none;
-  padding-left: 50px;
-}*/
 
 /*Optional: Style the caret down icon 
 .fa-caret-down {
