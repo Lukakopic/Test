@@ -7,7 +7,7 @@
   cursor: pointer;
   width: 50%;
   opacity: 0.9;
-  display: inline;
+  display: block;
   position:absolute;
   top:8px;
   right:10px;
@@ -39,7 +39,8 @@ border:none;
   color:white;
   padding:10px;
   float:left;
-  margin-left:50px;
+  margin-left:70px;
+  margin-top:20px;
 }
 
 
@@ -62,12 +63,12 @@ border:none;
 .modal-content {
   background-color: white;
   color:black;
-  overflow:hidden;
+  overflow:auto;
   margin: 5px auto; /* 15% from the top and centered */
   margin-bottom: 100px;
   border: 1px solid #888;
   width: 50%; /* Could be more or less, depending on screen size */
-  height: 700px;
+  height: 500px;
 }
 
 /* The Close Button */

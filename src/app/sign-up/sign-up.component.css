@@ -48,11 +48,13 @@ button {
 .cancelbtn {
   padding: 14px 20px;
   background-color: #f44336;
+  position: static;
 }
 
 .registerbtn {
   padding: 14px 20px;
   background-color: #4CAF50;
+  position:static;
 }
 
 
@@ -77,10 +79,11 @@ button {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: #23262c;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   padding-top: 50px;
-  color:black;
-  text-align:left;
+  color: black;
+  text-align: left;
 }
 
 /* Modal Content/Box */

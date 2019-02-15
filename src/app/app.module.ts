@@ -16,6 +16,12 @@ import { PlayersService } from './services/players.service';
 import { HttpClientModule } from '@angular/common/http';
 import { BestOfBestComponent } from './best-of-best/best-of-best.component';
 import { LogInComponent } from './log-in/log-in.component';
+import { CroatianLeagueComponent } from './All-leagues/croatian-league/croatian-league.component';
+import { SpanishLeagueComponent } from './All-leagues/spanish-league/spanish-league.component';
+import { GermanLeagueComponent } from './All-leagues/german-league/german-league.component';
+import { FrenchLeagueComponent } from './All-leagues/french-league/french-league.component';
+import { NationalTeamsComponent } from './national-teams/national-teams.component';
+
 
 
 
@@ -32,6 +38,12 @@ import { LogInComponent } from './log-in/log-in.component';
     PlayersComponent,
     BestOfBestComponent,
     LogInComponent,
+    CroatianLeagueComponent,
+    SpanishLeagueComponent,
+    GermanLeagueComponent,
+    FrenchLeagueComponent,
+    NationalTeamsComponent,
+   
     
    
    
@@ -47,7 +59,12 @@ import { LogInComponent } from './log-in/log-in.component';
       { path: 'about', component: AboutComponent },
       { path: 'contact', component: ContactComponent },
       { path: 'players', component: PlayersComponent },
-      { path: 'bestofthebest', component: BestOfBestComponent },
+      { path: 'best-of-the-best', component: BestOfBestComponent },
+      { path: 'league/croatian-league', component: CroatianLeagueComponent },
+      { path: 'league/french-league', component: FrenchLeagueComponent },
+      { path: 'league/german-league', component: GermanLeagueComponent },
+      { path: 'league/spanish-league', component: SpanishLeagueComponent },
+      { path: 'national-teams', component: NationalTeamsComponent },
       
     ])
 

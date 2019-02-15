@@ -16,8 +16,7 @@ export class PlayersComponent implements OnInit {
     this._playersService.getPlayers()
       .subscribe(data => this.players = data);
   }
-  //IN PROGRESS
-
+ 
   filterFunction = function () {
 
    // Declare variables
