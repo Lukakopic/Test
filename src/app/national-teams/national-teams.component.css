@@ -1,11 +1,20 @@
+.header {
+font-size: 60px;
+position: center;
+text-align:center;
+padding-bottom:50px;
+
+}
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
+  max-width: 170px;
   margin: 10px;
   text-align: center;
   position: page;
   display: inline-block;
-}
+  margin-bottom:20px;
+ }
 
 .title {
   color: grey;

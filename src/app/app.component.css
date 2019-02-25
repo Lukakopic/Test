@@ -9,6 +9,7 @@ body {
   font-family: "Lato", Baskerville old face;
   transition: background-color .5s;
   outline-color: rgb(40, 44, 52);
+ 
 }
 
 /*test provjera, radi li u glavnom css-u suzavanje prilikom sidenavigation*/
