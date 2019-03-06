@@ -21,6 +21,7 @@ import { SpanishLeagueComponent } from './All-leagues/spanish-league/spanish-lea
 import { GermanLeagueComponent } from './All-leagues/german-league/german-league.component';
 import { FrenchLeagueComponent } from './All-leagues/french-league/french-league.component';
 import { NationalTeamsComponent } from './national-teams/national-teams.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 
@@ -43,6 +44,7 @@ import { NationalTeamsComponent } from './national-teams/national-teams.componen
     GermanLeagueComponent,
     FrenchLeagueComponent,
     NationalTeamsComponent,
+    PageNotFoundComponent,
    
     
    
@@ -65,6 +67,7 @@ import { NationalTeamsComponent } from './national-teams/national-teams.componen
       { path: 'league/german-league', component: GermanLeagueComponent },
       { path: 'league/spanish-league', component: SpanishLeagueComponent },
       { path: 'national-teams', component: NationalTeamsComponent },
+      { path: '**', component: PageNotFoundComponent },
       
     ])
 
